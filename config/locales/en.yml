@@ -1626,6 +1626,7 @@ en:
     mastodon-light: Mastodon (Light)
     macaron: Macaron (Pastel light)
     fairy-floss: Fairy Floss (Pastel dark)
+    cyber-garden: Cyber Garden
   time:
     formats:
       default: "%b %d, %Y, %H:%M"
