@@ -14,7 +14,22 @@ export default class CharacterCounter extends React.PureComponent {
       return <span className='character-counter character-counter--over'>{diff}</span>;
     }
 
-    return <span className='character-counter'>{diff}</span>;
+    let disp;
+    if (diff > 1024) {
+      let i = (diff / 1024).toFixed(1);
+      if (i.at(-1) == "0") {
+        let dot = i.indexOf('.');
+        disp = i.substr(0, dot);
+      } else {
+        disp = i;
+      }
+
+      disp += "K";
+    } else {
+      disp = diff;
+    }
+
+    return <span className='character-counter'>{disp}</span>;
   }
 
   render () {
