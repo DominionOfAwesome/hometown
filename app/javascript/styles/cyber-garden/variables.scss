@@ -27,13 +27,13 @@ $error-value-color: $error-red !default;
 // Tell UI to use selected colors
 $ui-base-color: #351234 !default;                  // Darkest
 $ui-base-lighter-color: lighten($ui-base-color, 26%) !default; // Lighter darkest
-$ui-primary-color: darken($cyanish, 15%) !default;            // Lighter
+$ui-primary-color: $cyanish !default;            // Lighter
 $ui-secondary-color: $offwhite !default;        // Lightest
 $ui-highlight-color: $cyanish !default;
 
 // Variables for texts
 $primary-text-color: $white !default;
-$darker-text-color: $ui-primary-color !default;
+$darker-text-color: darken($ui-primary-color, 5%) !default;
 $dark-text-color: $ui-base-lighter-color !default;
 $secondary-text-color: $ui-secondary-color !default;
 $highlight-text-color: $ui-highlight-color !default;
