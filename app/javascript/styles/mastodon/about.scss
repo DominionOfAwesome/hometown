@@ -477,7 +477,6 @@ h1 a.brand {
   &__call-to-action {
     background: $ui-base-color;
     border-radius: 4px;
-    padding: 25px 40px;
     overflow: hidden;
     box-sizing: border-box;
 
@@ -494,6 +493,7 @@ h1 a.brand {
       display: flex;
       justify-content: flex-end;
       align-items: flex-end;
+      margin-right: 32px;
 
       .information-board__section {
         flex: 1 0 auto;
@@ -503,12 +503,12 @@ h1 a.brand {
       @media screen and (max-width: $no-gap-breakpoint-static) {
         width: 100%;
         justify-content: space-between;
+	margin-right: 0;
       }
     }
 
     .row__mascot {
       flex: 1;
-      margin: 10px -50px 0 0;
 
       @media screen and (max-width: $no-gap-breakpoint-static) {
         display: none;
@@ -592,18 +592,6 @@ h1 a.brand {
     background: $ui-base-color;
     border-radius: 4px;
     box-shadow: 0 0 6px rgba($black, 0.1);
-  }
-
-  &__mascot {
-    height: 104px;
-    position: relative;
-    left: -40px;
-    bottom: 37px;
-
-    img {
-      height: 190px;
-      width: auto;
-    }
   }
 
   &__short-description {
