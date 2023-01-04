@@ -286,3 +286,10 @@ article {
     z-index: unset !important;
   }
 }
+
+// Just a little thing to position the hero image in the about section
+.hero-right {
+  float: right;
+  width: 70%;
+  margin: 0 0 8px 8px;
+}
